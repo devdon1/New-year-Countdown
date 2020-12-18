@@ -2,7 +2,7 @@
     A HTML page that displays the days, hours, minutes and seconds left to new year 
 */
 
-function Logger()
+function CountDown()
 {
     let countDownDate = new Date(2021,0,1);
     let countDownHour = countDownDate.getHours();
@@ -39,5 +39,5 @@ function Logger()
     document.getElementById('seconds').innerHTML = secondsLeft;
 }
 
-Logger();
-setInterval(Logger, 1000);
+CountDown();
+setInterval(CountDown, 1000);
